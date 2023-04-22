@@ -44,6 +44,11 @@ header nav .anclas li {
     
 }
 
+header nav .anclas li:hover{
+    background-color: #ade0e9;
+    border-radius: 35px;
+}
+
 header nav .anclas li a{
     color: black;
     text-decoration: none;
