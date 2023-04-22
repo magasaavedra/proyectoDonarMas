@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------- FONT --------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
+}
+
+/*------------HEADER--------------*/
+
+input, label{
+    display: none;
+}
+
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #CDEFF5;
+    font-size: 1.5rem;
+}
+header nav .anclas{
+    position: relative;
+    display: flex;
+    justify-content: right;
+
+}
+header nav .anclas li {
+    text-decoration: none;
+    color: black;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    border-right: solid 1px rgb(#CDEFF5, black, black);
+    
+}
+
+header nav .anclas li:hover{
+    background-color: #ade0e9;
+    border-radius: 35px;
+}
+
+header nav .anclas li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+header.logo{
+    display: flex;
+    width: 200px;
+    justify-content: left;
+}
+
+/*------------------MAIN--------------------*/
+
+main .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+    
+}
+
+main h1{
+    width: 800px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-bottom: 60px;
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
+
+main .integrantes{
+    border-radius: 50px;
+    margin-top: 55px;
+    padding: 30px;
+    
+}
+
+main .integrantes:hover{
+    border:solid 2px rgb(100, 98, 98);
+}
+
+main .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+main .fotocv{
+    border-radius: 150px;
+}
+
+main .integrantes p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-top: 30px;
+    margin-bottom: 15px;
+}
+
+main .integrantes button{
+    margin-left: 23%;
+    padding: 5%;
+    border-radius: 85px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #81c9fa;
+    width: 10rem;
+    border: none;
+}
+
+main .integrantes a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+main .integrantes button:hover{
+    border-radius: 9px;
+    background-color: rgb(219, 219, 219);
+}
+
+/*-----------------FOOTER-------------------*/
+
+footer{
+    background-color: #CDEFF5;
+    margin-top: 150px;
+    padding: 50px 0px 50px 0px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/*--------------- RESPONSIVE -----------------*/
+
+
+        
+        @media screen and (max-width:800px) {/*cuando el dispositivo es como máximo de 700px*/
+        
+        
+        input:checked ~ ul{ /*muestra todas el contenido de todas las etiquetas ul */
+            display:none;
+        }
+        
+        
+        input:checked ~ label { /*muestra todo el contenido de todas las etiquetas label */
+            background: #CDEFF5;
+            
+            
+        }
+        
+        nav .anclas {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        li{/*elimina el margen  de cada botón */
+            margin: 0px;
+            text-align: left;
+            display: block;
+            
+        }
+        
+        
+        label { /* dibuja la etiqueta ☰  con formato botón */
+            position: absolute;
+            box-sizing: border-box;
+            display: block;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-weight: bold;
+            text-align: center;
+            user-select: none;
+            background-color: cadetblue;
+            margin-left: 91%;
+            z-index: 1;
+    }
+        
+        
+        
+
+        ul li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        ul li a:hover{
+            color: red;
+        }
+
+        main h1{
+            width: 270px;
+            border-bottom: 1px solid black;
+            text-align: center;
+            padding-bottom: 30px;
+            margin-top: 30px;
+            font-size: 1.8rem;
+        }
+    
+        main .container{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        main .fotocv{
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            margin-left: 19%;
+        }
+
+        header nav .logo{
+            justify-content: right;
+        }
+
+        header nav .logo img{
+            display: flex;
+            width: 150px;
+            justify-content: right;
+        }
+
+        header nav .anclas li a{
+            font-size: 1rem;
+        }
+
+        header nav .anclas li {
+            padding: 10px;
+            border-right: solid 1px rgb(#CDEFF5, black, black);
+            background-color: rgb(241, 234, 234);
+            
+        }
+
+        header nav{
+            height: 60px;
+        }
+
+}
+
