@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------- FONT --------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100px;
+}
+
+/*--------------------- MAIN ------------------------*/
+main h1 {
+    text-align: center;
+}
+.seccion{
+    margin:50px;
+    font-size: 20px;
+}
+
+.seccion p{
+    margin-bottom: 15px;
+}
+
+.seccion ul{
+    margin-left: 50px;
+}
+
+.seccion h2{
+    margin-bottom: 30px;
+}
+
+.seccion a{
+    display: flex;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.seccion a:hover{
+    color: #4fbfd3;
+}
+
+.roles{
+    margin: 30px 0px 15px ;
+
+}
+
+.seccion ul li {
+    margin-bottom: 15px;
+}
+
+
+
+/*--------------- RESPONSIVE -----------------*/
+
+
+        
+@media screen and (max-width:800px) {/*cuando el dispositivo es como máximo de 700px*/
+    main h1{
+        width: 270px;
+        border-bottom: 1px solid black;
+        text-align: center;
+        padding-bottom: 30px;
+        margin-top: 30px;
+        font-size: 1.8rem;
+    }
+
+    .seccion {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .seccion ul{
+        margin-left: 15px;
+    }
+
+    .seccion ul li {
+        margin-bottom: 0px;
+    }
+
+    .seccion h2{
+        margin-bottom: 10px;
+    }
+
+    .organigrama{
+        display: none;
+    }
+
+}
