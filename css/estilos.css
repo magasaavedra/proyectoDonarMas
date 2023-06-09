@@ -144,6 +144,44 @@ footer p{
     text-align: center;
     font-size: 1.3rem;
 }
+/*-------------------------- INICIO------------------------------------*/
+
+main .materia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+main .datos-materia{
+    font-size: 1.7rem;
+    line-height: 3;
+    margin-left: 50px;
+}
+
+main .datos-materia ul li{
+    list-style: none;
+}
+
+main .logouade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+/*------------------------------------ PROYECTO -------------------------------*/
+
+main .video-explicativo{
+    margin-top: 40px;
+    margin-left: 15%;
+    
+}
+main iframe{
+    border: black 2px solid;
+    width: 700px;
+    height: 400px;
+}
 
 /*--------------- RESPONSIVE -----------------*/
 
@@ -251,6 +289,29 @@ footer p{
         header nav{
             height: 60px;
         }
+
+/*--------------------------------------------- INICIO------------------------------------------------*/     
+
+main .logouade img{
+    width: 200px;
+}
+
+main .datos-materia{
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+/*--------------------------------------------- PROYECTO ---------------------------------------------*/
+
+main .video-explicativo{
+    margin-top: 30px;
+    margin-left: 5%;
+    
+}
+main iframe{
+    border: black 2px solid;
+    width: 320px;
+    height: 260px;
+}
 
 }
 
